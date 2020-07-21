@@ -1,11 +1,10 @@
-### PHASE ONE
-Your first task is to retrieve all films from this API, and then parse the response to display a "card" for each film. You will need to use the `fetch` method in order to do this, and you should invoke `fetch` when the component is mounted to the application. 
 
-Since we all should be using Chrome, you may get away with not importing the `isomorphic-fetch` node module, but for best practices you should import it as well as the `es6-promises`.
+### PHASE TWO
+Your second task is to conditionally render films. More specifically, you should be able to manually "load" the films with a button click. 
 
-Consider styling your card at this point so that it is easier to read. Bootstrap 4 should make this pretty easy for you.
+When the project first compiles, the only thing you should see is the Studio Ghibli logo image and a button with the text "Load Films". Upon clicking the button, the films should load and be displayed on the screen.
 
-At a minimum, you should display the film title and description, but you may use as many properties as you want.
+*Hint: your fetch method from Phase One does not need to change in order to complete this section. Instead, consider toggling a property in state with the button click.*
 
 
 
