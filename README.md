@@ -1,3 +1,14 @@
+### PHASE ONE
+Your first task is to retrieve all films from this API, and then parse the response to display a "card" for each film. You will need to use the `fetch` method in order to do this, and you should invoke `fetch` when the component is mounted to the application. 
+
+Since we all should be using Chrome, you may get away with not importing the `isomorphic-fetch` node module, but for best practices you should import it as well as the `es6-promises`.
+
+Consider styling your card at this point so that it is easier to read. Bootstrap 4 should make this pretty easy for you.
+
+At a minimum, you should display the film title and description, but you may use as many properties as you want.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +77,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
