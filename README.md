@@ -1,11 +1,10 @@
 
-### PHASE TWO
-Your second task is to conditionally render films. More specifically, you should be able to manually "load" the films with a button click. 
+### PHASE THREE
+Your third task is to combine both objectives from Phase One and Two in order to conditionally load data from another endpoint in the Studio Ghibli API. Furthermore, you may only make one HTTP request at a time.
 
-When the project first compiles, the only thing you should see is the Studio Ghibli logo image and a button with the text "Load Films". Upon clicking the button, the films should load and be displayed on the screen.
+For example, you may choose to load Films or People with a button for the respective endpoint, which means the project should only display two buttons (one for "Load Films", one for "Load People") when it first loads. The data loaded, and therefore rendered, depends on which button is pressed. 
 
-*Hint: your fetch method from Phase One does not need to change in order to complete this section. Instead, consider toggling a property in state with the button click.*
-
+At a minimum, if you choose the "People" endpoint, you should display the person's name, age, gender, and a link to that particular person's JSON response that will open in a new tab, but you may use as many properties as you want. If you choose something else as your second endpoint, just be sure to display at least two properties in addition to opening up the link to the item's ID in a new tab.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

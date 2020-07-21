@@ -13,11 +13,11 @@ const OutputCard = (props) => {
 
  const card = props.card.map((card) =>
     <Card key={card.id} id={card.id} className="text-center mt-5 shadow mx-auto bg-dark text-white">
-        <HeaderOutput  title={card.title} />
+        <HeaderOutput  title={props.endpoint ? card.title : card.name} />
         <Card.Body className="bg-danger">
-                <MsgOutput text={card.description} />
+                <MsgOutput  myId={card.id} open={props.endpoint ? false : true} text={props.endpoint ? card.description : card.url} />
         </Card.Body >
-                                 <Card.Footer className="text-center small w-100" ><span className="font-italic">{card.rt_score}%</span> | <span className="font-italic">{card.release_date}</span> | <span className="font-italic">{card.producer}</span> | <span className="font-italic">{card.director}</span></Card.Footer>
+                                 <Card.Footer className="text-center small w-100" ><span className="font-italic">{props.endpoint ? card.rt_score : card.gender}{props.endpoint ? "%" : ""}</span> | <span className="font-italic">{props.endpoint ? card.release_date : card.age}</span> | <span className="font-italic">{props.endpoint ? card.producer : card.eye_color}{props.endpoint ? "" : " colored eyes"}</span> | <span className="font-italic">{props.endpoint ? card.producer : card.hair_color}{props.endpoint ? "" : " colored hair"}</span></Card.Footer>
     </Card>
 
     );

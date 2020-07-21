@@ -4,9 +4,12 @@ import Col from 'react-bootstrap/Col';
 
 
 
-
+function onPeopleClick (thisClick, url){
+    window.open(url, '_blank');
+}
 
 const MsgOutput = (props) => {
+    
 
  
 return(
@@ -15,7 +18,7 @@ return(
             <Col xs={12}  >
           
                <section >
-                   <p className="font-italic">{props.text}</p>
+                   <p  onClick={props.open ? (e) =>{onPeopleClick(e.target, props.text);} : () =>{}}className="font-italic">{props.text}</p>
                </section>
           
              </Col>
